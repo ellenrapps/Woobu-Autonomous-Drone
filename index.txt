@@ -1,0 +1,124 @@
+<!-- Developed by Ellen Red -->
+
+
+<!DOCTYPE html>
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">    
+    
+<style>
+html{font-family: Helvetica; display:inline-block; margin: 0px auto; text-align: center;}
+h1{color: #0F3376; padding: 2vh;}p{font-size: 1rem;}
+.button_main{display: inline-block; border: none; border-radius: 75px; color: white; text-decoration: none}    
+.button_hover{background-color: #4682B4 ; font-size: 36px; width:39%}
+.button_forward_backward{background-color: #4682B4; font-size: 30px; width:40%; opacity:0.5}    
+.button_left_right{background-color: #4682B4; font-size: 30px; width:29%; opacity:0.5}
+.button_on{background-color: #4682B4; font-size: 34px; width:44%}
+.button_off{background-color: #4682B4; font-size: 34px; width:64%}
+.button_down{background-color: #4682B4; font-size: 30px; width:44%}
+.button_up{background-color: #4682B4; font-size: 34px; width:64%}
+</style>
+</head>
+
+<body>
+<p><font size="5.7" color=#4682B4><b>Auto Leveling/Altitude Hold</br>Aerial Vehicle</b></font></p>
+
+<p>X Angle: <strong><span id='x_angle'>--.-</span></strong></p>
+<p>Y Angle: <strong><span id='y_angle'>--.-</span></strong></p>
+
+<p><button class="button_main button_up" onclick="auto_takeoff()"><b>Auto Takeoff</b></button></p>
+<p><button class="button_main button_forward_backward" type="button" disabled><b>Forward</b></button></p>
+<p>
+<button class="button_main button_left_right" type="button" disabled><b>Left</b></button>
+<button class="button_main button_hover" onclick="hover()"><b>Hover</b></button>
+<button class="button_main button_left_right" type="button" disabled><b>Right</b></button>
+</p>
+<p><button class="button_main button_forward_backward" type="button" disabled><b>Backward</b></button></p>    
+<p><button class="button_main button_down" onclick="down()"><b>DOWN</b></button></p>
+<p><button class="button_main button_on" onclick="on_manual()"><b>ON</b></button></p>
+<p><button class="button_main button_off" onclick="off_manual()"><b>Off</b></button></p>
+    
+<script>
+var buttonSelector = document.querySelectorAll('button');
+buttonSelector.forEach(function (el){
+    el.addEventListener("click", function(ev){
+        buttonSelector.forEach(function(button) { button.style.opacity = '0.5' })
+        this.style.opacity = 1
+    })
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    const getSensorReadings = function() {
+        fetch('/update')
+            .then((resp) => resp.json())
+            .then(function(response) {
+                document.getElementById('x_angle').innerHTML =response.kalman_x_angle;
+                document.getElementById('y_angle').innerHTML =response.kalman_y_angle;
+        });
+    }
+
+    getSensorReadings();
+    setInterval(getSensorReadings, 10);  // update every 10 milliseconds
+});
+
+
+var targetUrl = `ws://${location.host}/ws`;
+var websocket;
+window.addEventListener("load", onLoad);
+
+function onLoad() {
+  initializeSocket();
+}
+
+function initializeSocket() {
+  websocket = new WebSocket(targetUrl);
+  websocket.onopen = onOpen;
+  websocket.onclose = onClose;
+  websocket.onmessage = onMessage;
+}
+
+function onOpen(event) {
+  console.log("Websocket Open...");
+}
+
+function onClose(event) {
+  console.log("Websocket Close...");
+  setTimeout(initializeSocket, 2000);
+}
+
+function onMessage(event) {
+  console.log("WebSocket message received:", event);
+}
+
+function sendMessage(message) {
+  websocket.send(message);
+}
+
+function auto_takeoff() {
+    sendMessage(auto_takeoff);
+}
+
+function hover() {
+    sendMessage(hover);
+}
+
+
+function down() {
+    sendMessage(down);
+}
+
+
+function on_manual() {
+    sendMessage(on_manual);
+}
+
+
+function off_manual() {
+     sendMessage(off_manual);
+}
+
+</script>
+</body>
+</html>
+

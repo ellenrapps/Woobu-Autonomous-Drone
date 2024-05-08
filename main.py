@@ -72,6 +72,14 @@ async def drone_commands(request, ws):
         await ws.send('')
         
 
+@app.route("/static/<path:path>")
+def static(request, path):
+    if ".." in path:
+        # directory traversal is not allowed
+        return "Not found", 404
+    return send_file("static/" + path)
+    
+
 def start_server():
     print('Starting microdot app')
     try:

@@ -1,6 +1,8 @@
 Woobu Autonomous Drone
 
-Woobu Autonomous Drone is a work in progress flying machine project. The goals are for this flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously lands itself. This project uses Raspberry Pi Pico plus MPU6050 as main hardware, and (Micro)Python, HTML and Javascript as the main programming languages.
+Woobu Autonomous Drone is a flying machine project. The code is completed. The code allows a flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously lands itself. A different type of energy is needed though. Sigh. 
+
+This project uses Raspberry Pi Pico plus MPU6050 as main hardware, and (Micro)Python, HTML and Javascript as the main programming languages.
 
 As of May 2024, the status of the drone is that it can read (using Kalman Filter and PID) X, Y angles faster than a blink of an eye and display (using AJAX, HTML, Javascript, ujson, utemplate) these X, Y values on your smartphone. On your smartphone, these buttons are provided: Auto Takeoff, Forward, Left, Right, Backward, Hover, Down, On, and Off.
 

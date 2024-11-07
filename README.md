@@ -14,7 +14,8 @@ Future Milestones for Woobu Autonomous Drone Project:
 - MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor
 - MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
 
-Support my work via Bitcoin donation: 
+Support my work via Bitcoin donation:
+
 3PBQZaxNh1U5pmKQ3zSboVfSedTJ5jYdBs
 
 or

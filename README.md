@@ -16,7 +16,7 @@ Future Milestones for Woobu Autonomous Drone Project:
 
 Extra: Soldering the early prototype of Woobu Autonomous Drone video link: https://www.youtube.com/watch?v=KjzJ14H1hpw
 
-N.B. Some changes to the hardware setup have been made since this video was taken.
+N.B. Some changes to the hardware setup have been made since the soldering video was taken.
 
 
 Support my work via Bitcoin donation:

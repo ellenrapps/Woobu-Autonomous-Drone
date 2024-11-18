@@ -10,14 +10,13 @@ The code purposely disabled the Forward, Left, Right, Backward buttons. All othe
 
 As shown in the videos (https://www.youtube.com/watch?v=ECWFBZKwFYE and https://www.youtube.com/watch?v=JJ19gocz3pc), the current set-up has hardware issues and as mentioned a different type of energy is needed. These issues are the reason that I won't be sharing all of the hardware set-up. However, I am sharing all the code as the code is working. The code itself shows connections between Raspberry Pi Pico and MPU6050, and Raspberry Pi Pico and 4 Motors. A jpg file is also provided on how the code is organized. Put the index.html file inside templates folder and put the control.js file inside the static folder.
 
+Soldering the early prototype of Woobu Autonomous Drone video link: https://www.youtube.com/watch?v=KjzJ14H1hpw
+
+Some changes to the hardware setup have been made since the soldering video was taken.
+
 Future Milestones for Woobu Autonomous Drone Project:
 - MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor
 - MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
-
-Extra: Soldering the early prototype of Woobu Autonomous Drone video link: https://www.youtube.com/watch?v=KjzJ14H1hpw
-
-N.B. Some changes to the hardware setup have been made since the soldering video was taken.
-
 
 Support my work via Bitcoin donation:
 

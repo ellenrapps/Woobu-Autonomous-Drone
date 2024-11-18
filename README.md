@@ -15,6 +15,7 @@ Future Milestones for Woobu Autonomous Drone Project:
 - MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
 
 Extra: Soldering the early prototype of Woobu Autonomous Drone video link: https://www.youtube.com/watch?v=KjzJ14H1hpw
+
 N.B. Some changes to the hardware setup have been made since this video was taken.
 
 

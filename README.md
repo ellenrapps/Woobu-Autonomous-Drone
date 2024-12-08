@@ -1,27 +1,18 @@
-Woobu Autonomous Drone
+Woobu Autonomous Drone  
 
-Woobu Autonomous Drone is a flying machine project. The code is completed. The code allows a flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously lands itself. A hardware fix and a different type of energy are needed though. 
+Woobu Autonomous Drone (Raspberry Pi Pico W Drone) is a flying machine project. The code is completed. The code allows a flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously land itself.  
 
-This project uses Raspberry Pi Pico plus MPU6050 as main hardware, and (Micro)Python, HTML and Javascript as the main programming languages.
+This project uses Raspberry Pi Pico W plus MPU6050 as the main hardware, and (Micro)Python, HTML and Javascript as the main programming languages.
 
-As of May 2024, the status of the drone is that it can read (using Kalman Filter and PID) X, Y angles faster than a blink of an eye and display (using AJAX, HTML, Javascript, ujson, utemplate) these X, Y values on your smartphone. On your smartphone, these buttons are provided: Auto Takeoff, Forward, Left, Right, Backward, Hover, Down, On, and Off.
+As shown in my videos (https://www.youtube.com/watch?v=ECWFBZKwFYE and https://www.youtube.com/watch?v=JJ19gocz3pc), the current setups have hardware issues. Despite this limitation, the completed code published on my GitHub page is working and
+can be used in your own drone hardware setup. 
 
-The code purposely disabled the Forward, Left, Right, Backward buttons. All other buttons are enabled. Microdot framework, Javascript are used for the buttons control. When one working button is clicked, all other working buttons' opacity is changed to 50%.
+The code can read X and Y angles faster than a blink of an eye and display these X, Y angles on your mobile browser. On your mobile browser, these buttons are provided: Auto Takeoff, Forward, Left, Right, Backward, Hover, Down, On, and Off. The code purposely disabled the Forward, Left, Right, Backward buttons.
 
-As shown in the videos (https://www.youtube.com/watch?v=ECWFBZKwFYE and https://www.youtube.com/watch?v=JJ19gocz3pc), the current set-up has hardware issues and as mentioned a different type of energy is needed. These issues are the reason that I won't be sharing all of the hardware set-up. However, I am sharing all the code as the code is working. The code itself shows connections between Raspberry Pi Pico and MPU6050, and Raspberry Pi Pico and 4 Motors. A jpg file is also provided on how the code is organized. Put the index.html file inside templates folder and put the control.js file inside the static folder.
+The following are the future milestones for Woobu Autonomous Drone:
+1) MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor
+2) MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
 
-Soldering the early prototype of Woobu Autonomous Drone video link: https://www.youtube.com/watch?v=KjzJ14H1hpw
+For only $50, you can buy from Gumroad my Woobu Autonomous Drone (Raspberry Pi Pico W Drone) PDF tutorial. In addition to the PDF tutorial, you will receive email support. After completing your purchase from Gumroad, you can ask me via email up to 100 specific questions about this tutorial. Questions should be asked within 365 days starting from the date of purchase.
 
-Some changes to the hardware setup have been made since the soldering video was taken.
-
-Future Milestones for Woobu Autonomous Drone Project:
-- MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor
-- MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
-
-Support my work via Bitcoin donation:
-
-3PBQZaxNh1U5pmKQ3zSboVfSedTJ5jYdBs
-
-or
-
-bc1p63fyummqja06a3gyvw6r4khw8puw02p7fxd5wyysmgnmsm47cz0sa363pj
+Raspberry Pi Pico W Drone (Woobu Autonomous Drone) PDF Tutorial + Email Support link: https://ellenrapps.gumroad.com/l/hrkgi

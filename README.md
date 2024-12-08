@@ -1,6 +1,6 @@
 Woobu Autonomous Drone  
 
-Woobu Autonomous Drone (Raspberry Pi Pico W Drone) is a flying machine project. The code is completed. The code allows a flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously land itself.  
+Woobu Autonomous Drone is a flying machine project. The code is completed. The code allows a flying machine to autonomously fly itself, autonomously hover, autonomously balance itself, and autonomously land itself.  
 
 This project uses Raspberry Pi Pico W plus MPU6050 as the main hardware, and (Micro)Python, HTML and Javascript as the main programming languages.
 

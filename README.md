@@ -7,7 +7,7 @@ This project uses Raspberry Pi Pico W plus MPU6050 as the main hardware, and (Mi
 As shown in my videos (https://www.youtube.com/watch?v=ECWFBZKwFYE and https://www.youtube.com/watch?v=JJ19gocz3pc), the current setups have hardware issues. Despite this limitation, the completed code published on my GitHub page is working and
 can be used in your own drone hardware setup. 
 
-The code can read X and Y angles faster than a blink of an eye and display these X, Y angles on your mobile browser. On your mobile browser, these buttons are provided: Auto Takeoff, Forward, Left, Right, Backward, Hover, Down, On, and Off. The code purposely disabled the Forward, Left, Right, Backward buttons.
+The code can read X and Y angles faster than a blink of an eye and display these X, Y angles on your mobile browser. On your mobile browser, you can control the following drone movements: Auto Takeoff, Forward, Left, Right, Backward, Hover, Down, On, and Off. The code purposely disabled the Forward, Left, Right, Backward buttons.
 
 The following are the future milestones for Woobu Autonomous Drone:
 1) MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor

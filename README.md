@@ -12,7 +12,3 @@ The code can read X and Y angles faster than a blink of an eye and display these
 The following are the future milestones for Woobu Autonomous Drone:
 1) MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor
 2) MPU6050 shall not only be used in autonomous drone setups but also in other flying machine setups
-
-For only $50, you can buy my Woobu Autonomous Drone (Raspberry Pi Pico W Drone) PDF tutorial. In addition to the PDF tutorial, you will receive email support. 
-
-To buy my Raspberry Pi Pico W Drone (Woobu Autonomous Drone) PDF Tutorial + Email Support, visit my website: https://ellenrapps.com/Raspberry-Pi-Pic-W-Drone-Tutorial

@@ -11,9 +11,9 @@ The code can read X and Y angles faster than a blink of an eye and display these
 
 The following are the future project milestones of Woobu Autonomous Drone:
 1) Build the working hardware prototype,
-2) MPU6050's gyroscope and accelerometer shall be used to measure altitude and distance indoor and outdoor,
-3) Ublox GPS Module shall be used to get the exact latitude and longitude,
-4) A module shall be used to detect and navigate around obstacles, and
+2) A gyroscope and accelerometer module shall be used to measure altitude and distance indoor and outdoor,
+3) A GPS Module shall be used to get the exact latitude and longitude,
+4) An obstacle module shall be used to detect and navigate around obstacles, and
 5) The working software of this drone shall be used in another autonomous flying machine.
 
 Link to Woobu Autonomous Drone free PDF tutorial: https://github.com/ellenrapps/Woobu-Autonomous-Drone/blob/main/PDF%20Tutorial%20of%20Woobu%20Autonomous%20Drone.pdf

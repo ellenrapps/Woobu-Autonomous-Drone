@@ -18,5 +18,5 @@ The following are the future project milestones of Woobu Autonomous Drone:
 
 Link to Woobu Autonomous Drone free PDF tutorial: https://github.com/ellenrapps/Woobu-Autonomous-Drone/blob/main/PDF%20Tutorial%20of%20Woobu%20Autonomous%20Drone.pdf
 
-Ellen Red, Hardware and Software Engineer of Woobu Autonomous Drone
+Ellen Red, Hardware and Software Developer of Woobu Autonomous Drone
 

@@ -16,7 +16,7 @@ The following are the future project milestones of Woobu Autonomous Drone:
 4) An obstacle module shall be used to detect and navigate around obstacles, and
 5) The working software of this drone shall be used in another autonomous flying machine.
 
-Link to Woobu Autonomous Drone free PDF tutorial: https://github.com/ellenrapps/Woobu-Autonomous-Drone/blob/main/PDF%20Tutorial%20of%20Woobu%20Autonomous%20Drone.pdf
+Link to Woobu Autonomous Drone free PDF tutorial: https://github.com/ellenrapps/Woobu-Autonomous-Drone/blob/main/Tutorial%20of%20Woobu%20Autonomous%20Drone.pdf
 
 Ellen Red, Hardware and Software Developer of Woobu Autonomous Drone
 
